@@ -1,0 +1,11 @@
+becypress-gateway:
+  ignore:
+    startWith: /static
+    contain: .
+  oauth:
+    prefix: /api
+
+  jwt:
+    secret: becypress-auth-secret
+    expiration: 7200
+    header: access-token
